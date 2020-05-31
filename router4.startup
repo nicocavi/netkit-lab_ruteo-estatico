@@ -1,0 +1,11 @@
+ip link set dev eth0 up
+ip link set dev eth1 up
+ip link set dev eth2 up
+ip link set dev eth3 up
+
+ip addr add dev eth0 200.14.32.1/26
+ip addr add dev eth1 200.14.32.129/26
+ip addr add dev eth2 10.10.10.100/24
+ip addr add dev eth3 172.16.0.2/30
+
+route add default gw 200.14.32.3

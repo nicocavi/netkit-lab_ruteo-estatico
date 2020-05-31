@@ -1,0 +1,4 @@
+ip link set dev eth0 up
+ip addr add dev eth0 200.14.32.130/26
+
+route add default gw 200.14.32.129
