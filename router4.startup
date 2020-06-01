@@ -9,3 +9,5 @@ ip addr add dev eth2 10.10.10.100/24
 ip addr add dev eth3 172.16.0.2/30
 
 route add default gw 200.14.32.3
+iptables -t nat -A POSTROUTING -s 10.10.10.0/24 -o eth2 -j
+iptables -t nat -A POSTROUTING -s 172.16.0.0/30 -o eth3 -j

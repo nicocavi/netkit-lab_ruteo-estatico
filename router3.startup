@@ -3,3 +3,5 @@ ip link set dev eth1 up
 
 ip addr add dev eth0 192.168.0.30/24
 ip addr add dev eth1 172.16.0.1/30
+
+ip route add 200.14.32.0/26 via 172.16.0.2 dev eth1 

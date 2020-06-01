@@ -5,4 +5,4 @@ ip addr add dev eth0 192.168.0.89/24
 ip addr add dev eth1 200.14.32.2/26
 
 route add default gw 200.14.32.1
-
+iptables  -t nat -A POSTROUTING  -s 192.168.1.0/24  -o eth0 -j
